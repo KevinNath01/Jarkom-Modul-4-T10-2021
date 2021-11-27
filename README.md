@@ -10,7 +10,63 @@ Anggota Kelompok T10:<br>
 
 # Soal <a name="Soal"></a>
 
-### 2. VLSM
+### 1. VLSM
+**Diagram**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/PembagianVLSM.png">
+<br>
+
+**Tree**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/TreeVLSM.jpg">
+<br>
+**Tabel**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/vlsmnid.jpg">
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/vlsmsub.jpg">
+<br>
+**CPT**
+Setelah penghitungan IP di Tree, ip akan di assign ke masing masing pc atau router sesuai dengan subnetnya juga
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/cpt.png">
+<br>
+Kemudian pada setiap router dilakukan routing agar paket bisa sampai ke ip tujuan dan diberikan ip default 0.0.0.0/0 agar dari foosha bisa kembali ke asal
+<br>
+**WATER7**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Water7.png">
+<br>
+**FOOSHA**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Foosha.png">
+<br>
+**GUANHAO**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Guanhao.png">
+<br>
+**OIMO**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Oimo.png">
+<br>
+**PUCCI**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Pucci.png">
+<br>
+**ALABASTA**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Alabasta.png">
+<br>
+**SEASTONE**
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/Seastone.png">
+<br>
+Setelah routing dilakukan maka akan dicoba dengan Ping dari host ke tujuan dengan hasil sebagai berikut
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/run1.png">
+<br>
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/run2.png">
+<br>
 
 ### 2. CIDR
 
