@@ -11,6 +11,7 @@ Anggota Kelompok T10:<br>
 # Soal <a name="Soal"></a>
 
 ### 1. VLSM
+
 **Diagram**
 <br>
 <img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/VLSM/PembagianVLSM.png">
@@ -72,7 +73,15 @@ Setelah routing dilakukan maka akan dicoba dengan Ping dari host ke tujuan denga
 
 **Diagram**
 
+Pertama kami menentukan subnet yang ada dalam topologi dan melakukan `labelling` netmask terhadap masing-masing subnet dan didapatkan subnet A1 hingga A15
+
+Lalu kami menggabungkan subnet paling luar (paling jauh dari internet) dari topologi tersebut. Contohnya adalah `A3 /25` dengan `A4 /21`menjadi `B1 /20` dan seterusnya. Hingga didapatkan hasil akhir subnet terbesar adalah `H1 /15`
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/CIDR/CIDR.png">
+
 **Tree**
+
+Karena subnet terbesar yang kami dapat adalah `H1 /15` maka IP root pada tree kami adalah `192.216.0.0/15`. Lalu root tersebut dibagi menjadi 2 yaitu `G1 /16` dengan IP `192.216.0.0 /16` `E1 /17` dengan IP `192.217.0.0/17`. Dengan menerapkan aturan pembagian IP tersebut, didapatlan susunan Tree kami sebagai berikut
+<img src="https://github.com/KevinNath01/Jarkom-Modul-4-T10-2021/blob/main/CIDR/TreeModul4-CIDR.jpg">
 
 **Tabel**
 
@@ -89,12 +98,14 @@ Pertama, membuat topologi sesuai permintaan soal dan menginputkan IP pada masing
 Melakukan routing pada masing-masing router dan host
 
 **WATER7**
+
 ```
 route add -net 192.217.0.128 netmask 255.255.255.128 gw 192.217.0.26 #JIPANGU
 route add -net 192.217.0.0 netmask 255.255.248.0 gw 192.217.0.26 #COURTYARD CALMBELT
 ```
 
 **FOOSHA**
+
 ```
 route add -net 192.217.0.128 netmask 255.255.255.128 gw 192.217.0.22 #JIPANGU
 route add -net 192.217.0.0 netmask 255.255.248.0 gw 192.217.0.22 #COURTYARD CALMBELT
@@ -107,6 +118,7 @@ route add -net 192.216.1.0 netmask 255.255.255.0 gw 192.216.0.14 #ENIESLOBBY
 ```
 
 **GUANHAO**
+
 ```
 route add -net 192.216.0.48 netmask 255.255.255.240 gw 192.216.8.3 #JORGE
 route add -net 192.216.0.4 netmask 255.255.255.252 gw 192.216.0.10 #FUKUROU
@@ -114,6 +126,7 @@ route add -net 192.216.1.0 netmask 255.255.255.0 gw 192.216.0.10 #ENIESLOBBY
 ```
 
 **OIMO**
+
 ```
 route add -net 192.216.0.0 netmask 255.255.252.0 gw 192.216.1.3 #ELENA
 ```
